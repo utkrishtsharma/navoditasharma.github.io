@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navodita Sharma - Teacher & Mentor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #66bb6a, #1e88e5);
+            color: #fff;
+            text-align: center;
+            transition: background 0.5s;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #ffeb3b;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background: url('pic.png') center/cover no-repeat;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #ffc107;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+        #colorButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #2196F3;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Navodita Sharma</h1>
+        <p>New Delhi - 110036</p>
+        <p>Email: navoditsharma1993@gmail.com | Cell: +91 8587862469</p>
+        <p>Address: House no 613c, near Nehru enclave, Alipur, Delhi 36</p>
+    </header>
+
+    <div class="profile-image"></div>
+
+    <div class="container">
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Primary Teacher looking for an opportunity to help children develop intellectually, socially, personally, and emotionally by offering a pragmatic educational and loving atmosphere.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>Secondary (10th) - 2009, CBSE</li>
+                <li>Senior Secondary (12th) - 2011, CBSE</li>
+                <li>Graduation (B.EL.ED) - 2011-2015, Delhi University</li>
+                <li>Graduation (B.ED) - Maths - 2015-2017, IP University</li>
+                <li>Graduation (MA Psychology) - 2019-2021, IGNOU (Distance)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Core Qualifications</h2>
+            <ul>
+                <li>CTET (I + II) - 2015, CTET</li>
+                <li>PG Diploma (Guidance and Counselling) - 2022, Jamie Islamia (Distance)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <p>Nayi Disha Mental Health Clinic - 2022, Internship</p>
+        </section>
+
+        <section>
+            <h2>Personal Skills</h2>
+            <ul>
+                <li>Communication</li>
+                <li>Honesty</li>
+                <li>Accepting challenges</li>
+                <li>Good listener</li>
+                <li>Patience</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2023 Navodita Sharma - Teacher & Mentor
+    </footer>
+
+    <button id="colorButton">Change Color</button>
+
+    <script>
+        const colorButton = document.getElementById('colorButton');
+        const body = document.body;
+        const colors = ['#000', '#ff0000', '#1e88e5', '#ffc107']; // Different colors
+        let currentColorIndex = 0;
+
+        colorButton.addEventListener('click', () => {
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+            body.style.background = colors[currentColorIndex];
+        });
+    </script>
+</body>
+</html>
